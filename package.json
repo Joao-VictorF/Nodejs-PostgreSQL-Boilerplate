@@ -1,0 +1,54 @@
+{
+  "name": "api_boilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node node_modules/nodemon/bin/nodemon bin/server",
+    "start": "node bin/server",
+    "commit": "cz"
+  },
+  "_moduleAliases": {
+    "@root": ".",
+    "@routes": "src/routes",
+    "@common": "src/common",
+    "@controllers": "src/controllers",
+    "@database": "src/database",
+    "@models": "src/database/models",
+    "@config": "src/database/config"
+  },
+  "author": "João Victor Freitas R. De Sousa",
+  "license": "MIT",
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "crypto-random-string": "^3.3.0",
+    "dotenv": "^8.2.0",
+    "email-templates": "^8.0.3",
+    "express": "^4.17.1",
+    "http-status-codes": "^2.1.4",
+    "jsonwebtoken": "^8.5.1",
+    "module-alias": "^2.2.2",
+    "moment": "^2.29.1",
+    "pg": "^8.5.1",
+    "sequelize": "^6.3.5",
+    "validator": "^13.5.2",
+    "winston": "^3.3.3"
+  },
+  "devDependencies": {
+    "commitizen": "^4.2.3",
+    "cz-conventional-changelog": "^3.3.0",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.6"
+  },
+  "engines": {
+    "node": "14.15.4"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
